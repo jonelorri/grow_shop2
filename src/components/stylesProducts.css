@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.product {
+    margin: 90px auto;
+    width: 280px;
+    height: 380px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.product:hover {
+    transition: 0.2s;
+    box-shadow: 0 5px 35px rgba(255, 255, 255, 0.043);
+    transform: scale(1.01);
+}
+
+.product h1 {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.underline {
+    position: absolute;
+    bottom: 43px;
+    margin-left: 25px;
+    background-color: white;
+    height: 0.1px;
+    width: 230px;
+}
+
+.product h2 {
+    text-align: center;
+    margin-top: 2px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.product_image {
+    width: 280px;
+    border-radius: 20px 20px 0 0;
+}
