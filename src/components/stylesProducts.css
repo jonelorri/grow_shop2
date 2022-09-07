@@ -14,7 +14,8 @@
     border-radius: 20px 20px 0 0;
 }
 
-.product2 {
+.product {
+    border-radius: 20px;
     margin: 100px auto 0;
     width: 280px;
     height: 380px;
@@ -46,6 +47,7 @@
 }
 
 .product_face--front {
+    border: 1px solid white;
     display: grid;
     align-items: center;
 }
@@ -69,7 +71,9 @@
 
 .product_face--back {
     transform: rotateY(180deg);
-    background-image: linear-gradient(rgb(39, 39, 39), rgb(15, 15, 15));}
+    background-image: linear-gradient(rgb(39, 39, 39), rgb(15, 15, 15));
+    border-radius: 20px;
+}
 
 .product_content {
     width: 100%;
@@ -82,7 +86,7 @@
 }
 
 .product_content p {
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .product_content button {

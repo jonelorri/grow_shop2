@@ -13,7 +13,7 @@ const SingleProduct = ({prod}) => {
 
   return (
     <div>
-      <div className='product2'>
+      <div className='product'>
         <div className={`product_inner ${prod.code}`} onClick={handleClick}>
           <div className='product_face product_face--front'>
             <img src={prod.img} alt={prod.name} className='product_image'></img>
