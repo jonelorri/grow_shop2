@@ -11,6 +11,7 @@ const Home = () => {
   const [products] = useState([
     {
       id: 1,
+      code: "critical_auto",
       name: "Critical Auto (semilla)",
       description: "Critical Auto es la semilla de marihuana más recomendada para los cultivadores sin experiencia. Fácil, rápida y generosa.",
       price: 4,
@@ -18,6 +19,7 @@ const Home = () => {
     },
     {
       id: 2,
+      code: "critical_fem",
       name: "Critical Feminizada (semilla)",
       description: "Critical es una semilla de marihuana feminizada que lo tiene todo y que se encuentra entre las grandes damas del cannabis: crece sin problemas, su capacidad productiva es espectacular, sus cualidades aromáticas y gustativas son inigualables, y su potente efecto produce un impresionante y característico subidón que todo el mundo quiere experimentar.",
       price: 4,

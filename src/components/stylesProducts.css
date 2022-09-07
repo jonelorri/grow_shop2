@@ -1,31 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-.product {
-    margin: 90px auto;
-    width: 280px;
-    height: 380px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    cursor: pointer;
-    display: grid;
-    align-items: center;
-    position: relative;
-}
-
-.product:hover {
-    transition: 0.2s;
-    box-shadow: 0 5px 35px rgba(255, 255, 255, 0.043);
-    transform: scale(1.01);
-}
-
-.product h1 {
-    text-align: center;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-}
-
 .underline {
     position: absolute;
     bottom: 43px;
@@ -35,7 +9,56 @@
     width: 230px;
 }
 
-.product h2 {
+.product_image {
+    width: 280px;
+    border-radius: 20px 20px 0 0;
+}
+
+.product2 {
+    margin: 100px auto 0;
+    width: 280px;
+    height: 380px;
+    perspective: 1000px;
+}
+
+.product_inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.product_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 13px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.product_face--front {
+    display: grid;
+    align-items: center;
+}
+
+.product_face--front h1 {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.product_face--front h2 {
     text-align: center;
     margin-top: 2px;
     font-family: 'Rajdhani', sans-serif;
@@ -44,7 +67,24 @@
     color: white;
 }
 
-.product_image {
-    width: 280px;
-    border-radius: 20px 20px 0 0;
+.product_face--back {
+    transform: rotateY(180deg);
+    background-image: linear-gradient(rgb(39, 39, 39), rgb(15, 15, 15));}
+
+.product_content {
+    width: 100%;
+    height: 100%;
+    color: #f3f3f3;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+.product_content p {
+    margin: 10px;
+}
+
+.product_content button {
+    bottom: 0;
 }
