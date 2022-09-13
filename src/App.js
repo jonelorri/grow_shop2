@@ -1,15 +1,14 @@
 import Home from './components/Home';
-import Header from './components/Header';
+import Bolsa from './components/Bolsa';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
       <Routes className="App">
         <Route path='/' exact element={<Home/>}/>
-        {/* <Route path='/bag' exact element={<Home/>}/> */}
+        <Route path='/bolsa' exact element={<Bolsa/>}/>
       </Routes>
     </BrowserRouter>
   );

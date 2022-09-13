@@ -18,6 +18,56 @@ header {
     cursor: pointer;
 }
 
+.header2 {
+    background-color: #000000;
+    display: none;
+    font-family: 'Rajdhani';
+    height: 63px;
+}
+
+.header2 h1 {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header2_content {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.header2_content_right {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.login_light {
+    width: 10px;
+    height: 10px;
+    background-color: #FF5468;
+    box-shadow: 0 0 10px #FF5468;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 131px;
+    margin-left: 120px;
+}
+
+.login_light2 {
+    width: 10px;
+    height: 10px;
+    background-color: #FF5468;
+    box-shadow: 0 0 10px #FF5468;
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 120px;
+    border-radius: 10px;
+}
+
 .header img {
     width: 30px;
     margin: 30px 25px;
@@ -65,6 +115,7 @@ header {
 
 .front_page {
     height: 100vh;
+    max-height: 1000px;
     width: 100vw;
     display: grid;
     justify-content: center;
@@ -72,23 +123,283 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    background-color: #121212;
 }
 
 .logo {
     margin: auto;
     grid-row: 2;
-    width: 200px;
+    max-width: 177px;
 }
 
 .logo_text {
     grid-row: 3;
     align-self: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 270px;
+}
+
+.front_page2 {
+    display: none;
+    padding-top: 63px;
+    background: linear-gradient(255.75deg, #FF5468 8.47%, #9E7CFF 37.53%, #79BFFF 66.6%, #43FFD2 95.67%);
+    width: 100%;
+    height: 490px;
+}
+
+.front_page2_content {
+    margin: 60px auto;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo2 {
+    margin: auto;
+    grid-row: 2;
+    max-width: 177px;
+}
+
+.logo_text2 {
+    grid-row: 3;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    width: 270px;
+}
+
+.banner {
+    height: 53px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    padding: 0;
+    margin: -30px 0;
+}
+
+.banner_contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 14px;
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: auto;
 }
 
 .contenido {
     background-color: #121212;
     height: 100vh;
     width: 100%;
+}
+
+.bolsa_header {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    font-family: 'Rajdhani';
+    height: 63px;
+}
+
+.bolsa_header_contenido {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.bolsa_header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.bolsa_header img {
+    cursor: pointer;
+    width: 8px;
+    position: absolute;
+    top: 9px;
+    left: 40px;
+}
+
+.bolsa_contenido {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 100%);
+}
+
+.bolsa_resumen {
+    color: rgb(250, 250, 250);
+    font-family: 'Rajdhani';
+    width: 700px;
+    margin: 90px auto;
+}
+
+.bolsa_resumen h3 {
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+.bolsa_resumen h4 {
+    font-size: 14px;
+    margin-left: 0px;
+    font-weight: 500;
+}
+
+.bolsa_resumen h5 {
+    font-size: 13.5px;
+}
+
+.bolsa_total {
+    margin: auto !important; 
+}
+
+.bolsa_underline {
+    background-color: rgb(250, 250, 250);
+    width: 90%;
+    height: 0.5px;
+    margin: auto;
+}
+
+.bolsa_productos {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.bolsa_form {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.valueButton {
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 0px;
+    padding: 9px 0;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(190, 190, 190, 0.933);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.valueButton p {
+    color: black;
+    margin-top: -10px;
+}
+  
+.valueButton:hover {
+    cursor: pointer;
+}
+  
+.bolsa_form #decrease {
+    border-radius: 2px 0 0 2px;
+}
+  
+.bolsa_form #increase {
+    border-radius: 0 2px 2px 0;
+}
+  
+.bolsa_form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+  
+.bolsa_form input#number {
+    text-align: center;
+    border: none;
+    margin: -1px 0 0 0;
+    width: 30px;
+    height: 16px;
+}
+  
+.bolsa_form input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bolsa_total {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.bolsa_total h5 {
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.button_pay {
+    cursor: pointer;
+    display: flex;
+    margin: 20px auto;
+    background-color: aqua;
+    width: 148px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 14.5px;
+    background: linear-gradient(255.75deg, #FF5468 8.47%, #9E7CFF 37.53%, #79BFFF 66.6%, #43FFD2 95.67%);
+}
+
+.button_pay:hover {
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.131);
+    transform: scale(1.04);
+}
+
+@media (min-width: 780px) {
+    .header {
+      display: none;
+    }
+    .header2 {
+        display: flex;
+    }
+    .front_page {
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .front_page2 {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .logo_text {
+        display: none;
+    }
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        margin: 100px auto;
+    }
+    .bolsa_resumen h3 {
+        font-size: 23px;
+    }
+    .bolsa_resumen h4 {
+        font-size: 19px;
+    }
+    .bolsa_resumen h5 {
+        margin-top: 28px;
+        font-size: 15px;
+    }
+    .bolsa_form {
+        margin-top: 27px;
+    }
 }
