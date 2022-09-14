@@ -12,7 +12,7 @@ const Home = () => {
     {
       id: 1,
       code: "critical_auto",
-      name: "Critical Auto",
+      name: "Critical Auto (semilla)",
       description: "Critical Auto es la semilla de marihuana más recomendada para los cultivadores sin experiencia. Fácil, rápida y generosa. La podremos cosechar en unos 60-70 días desde que la germinamos",
       price: 4,
       img: auto_critical,
@@ -20,7 +20,7 @@ const Home = () => {
     {
       id: 2,
       code: "critical_fem",
-      name: "Critical Feminizada",
+      name: "Critical Feminizada (semilla)",
       description: "Critical es la variedad más vendida y cultivada del mundo. Son plantas resistentes, fáciles de cultivar y con grandes cogollos. Estas, estarán listas para cosechar a mediados o finales del mes de septiembre",
       price: 4,
       img: critical,

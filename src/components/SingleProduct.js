@@ -18,8 +18,7 @@ const SingleProduct = ({prod}) => {
           <div className='product_face product_face--front'>
             <img src={prod.img} alt={prod.name} className='product_image'></img>
             <h1>{prod.name}</h1>
-            <div className='underline'></div>
-            <h2>{prod.price} matic</h2>
+            <h2>{prod.price} matic</h2> 
           </div>
           <div className='product_face product_face--back'>
               <div className='product_content'>

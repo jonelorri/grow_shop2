@@ -1,19 +1,18 @@
 import React from 'react';
+import Header from './Header';
 import './styles.css';
-import arrow from '../img/arrow.png';
-import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 const Bolsa = () => {
 
     return (
     <div className='bolsa_contenedor'>
-        <header className='bolsa_header'>
+        <Header/>
+        {/* <header className='bolsa_header'>
             <div className='bolsa_header_contenido'>
                 <h1>Bolsa</h1>
                 <Link to="/"><img alt='return_button' src={arrow}></img></Link>
             </div>
-        </header>
+        </header> */}
         <div className='bolsa_contenido'>
             <div className='bolsa_resumen'>
                 <h3>Resumen del pedido</h3>
