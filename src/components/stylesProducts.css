@@ -41,14 +41,25 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 10px;
     box-shadow: 0 13px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .product_face--front {
     border: 1px solid rgb(250, 250, 250);
+    background-image: linear-gradient(rgb(15, 15, 15) 50%, rgb(39, 39, 39) 100%);
     display: grid;
     align-items: center;
+}
+
+.product_face--front:hover {
+    background-image: linear-gradient(rgb(15, 15, 15) 30%, rgb(39, 39, 39) 100%);
+}
+
+.product_face--front img:hover {
+    transition: 0.4s;
+    transition-delay: 1.5s;
+    transform: scale(3);
 }
 
 .product_face--front h1 {
