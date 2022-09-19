@@ -1,6 +1,10 @@
-import './stylesProducts.css';
+import './stylesProducts.css'
+import React, { useContext } from 'react'
+import { Cart } from '../Context';
 
 const SingleProduct = ({prod}) => {
+
+  const { cart, setCart } = useContext(Cart);
 
   function handleClick() {
     const card = document.querySelector(`.${prod.code}`);
@@ -8,8 +12,13 @@ const SingleProduct = ({prod}) => {
   }
 
   function handlesecond(e) {
-    console.log(e);
+    setCart([...cart, e]);
   }
+
+  // function handlesecond(e) {
+  //   setCart(cart.filter((e) => e.code !== prod.code));
+  //   console.log(cart);
+  // }
 
   return (
     <div>
@@ -24,7 +33,7 @@ const SingleProduct = ({prod}) => {
               <div className='product_content'>
                   <h2>{prod.name}</h2>
                   <p>{prod.description}</p>
-                  <button onClick={() => handlesecond(prod.code)}>Añadir a la bolsa</button>
+                  <button onClick={() => handlesecond(prod)}>Añadir a la bolsa</button>
               </div>
             </div>
 
