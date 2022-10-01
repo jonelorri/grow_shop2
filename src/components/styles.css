@@ -115,7 +115,7 @@ header {
 
 .front_page {
     height: 100vh;
-    max-height: 1000px;
+    max-height: 844px;
     width: 100vw;
     display: grid;
     justify-content: center;
