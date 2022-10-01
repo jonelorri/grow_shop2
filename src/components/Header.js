@@ -5,10 +5,12 @@ import cross from '../img/cross.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { ethers } from "ethers";
+import { useContext } from 'react';
+import { CurrentAccount } from '../Context2';
 
-const Header = () => {
+const Header = () => { 
 
-  const [currentAccount, setCurrentAccount] = useState("");
+  const { currentAccount, setCurrentAccount } = useContext(CurrentAccount);
 
   function move() {
     document.querySelector('.toggle').classList.toggle('toggle_move');
@@ -35,10 +37,14 @@ const Header = () => {
         setCurrentAccount(account)
         document.querySelector('.login_light2').style.backgroundColor = "#43FFD2";
         document.querySelector('.login_light2').style.boxShadow = "0 0 10px #43FFD2";
+        document.querySelector('.login_light').style.backgroundColor = "#43FFD2";
+        document.querySelector('.login_light').style.boxShadow = "0 0 10px #43FFD2";
       } else {
         console.log("No authorized account found");
         document.querySelector('.login_light2').style.backgroundColor = "#FF5468";
         document.querySelector('.login_light2').style.backgroundColor = "0 0 10px #FF5468";
+        document.querySelector('.login_light').style.backgroundColor = "#FF5468";
+        document.querySelector('.login_light').style.backgroundColor = "0 0 10px #FF5468";
       }
     } catch (error) {
       console.log(error);
@@ -60,6 +66,8 @@ const Header = () => {
       setCurrentAccount(accounts[0]);
       document.querySelector('.login_light2').style.backgroundColor = "#43FFD2";
       document.querySelector('.login_light2').style.boxShadow = "0 0 10px #43FFD2";
+      document.querySelector('.login_light').style.backgroundColor = "#43FFD2";
+      document.querySelector('.login_light').style.boxShadow = "0 0 10px #43FFD2";
     } catch (error) {
       console.log(error)
     }
@@ -78,7 +86,7 @@ const Header = () => {
           <Link style={{ textDecoration: 'none' }} to='/'><h1>Tienda</h1></Link>
           <Link style={{ textDecoration: 'none' }} to='/bolsa'><h1>Bolsa</h1></Link>
           <div className='login_light'></div>
-          <h1>Login</h1>
+          <h1 onClick={connectWallet}>Login</h1>
         </div>
       </header>
       <header className='header2'>

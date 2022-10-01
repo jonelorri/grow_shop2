@@ -11,12 +11,6 @@ const Bolsa = () => {
     return (
     <div className='bolsa_contenedor'>
         <Header/>
-        {/* <header className='bolsa_header'>
-            <div className='bolsa_header_contenido'>
-                <h1>Bolsa</h1>
-                <Link to="/"><img alt='return_button' src={arrow}></img></Link>
-            </div>
-        </header> */}
         <div className='bolsa_contenido'>
             <div className='bolsa_resumen'>
                 <h3>Resumen del pedido</h3>
@@ -36,7 +30,7 @@ const Bolsa = () => {
                 <div className='bolsa_underline'></div>
                 <div className='bolsa_total'>
                     <h4>Total:</h4>
-                    <h5>32 matic</h5>
+                    <h5>0 matic</h5>
                 </div>
                 <div className='button_pay'>Comprar</div>
             </div>

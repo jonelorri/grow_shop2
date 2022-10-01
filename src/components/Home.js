@@ -40,11 +40,9 @@ const Home = () => {
           <img src={logo_text} alt='naming' className='logo_text2'></img>
         </div>
         <div className='banner'>
-          <div className='banner_contenido'>
-            <h2>La mejor CALIDAD garantizada</h2>
-            <h2>Envios GRATIS a toda la península</h2>
-            <h2>Pagos por la red de POLYGON</h2>
-          </div>
+          <marquee behavior="scroll" direction="left" className='banner_contenido'>
+              <h2>Envios GRATIS a toda la península &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Pagos por la red de POLYGON &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; La mejor CALIDAD garantizada</h2>
+          </marquee>
         </div>
       </div>
       <div className='contenido'>
